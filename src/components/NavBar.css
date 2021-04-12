@@ -1,0 +1,26 @@
+.logo{
+    margin-top:2px;
+    position: absolute;
+    font-size: 30px;
+    color: yellow;
+}
+.barraNavegacion{
+    display: grid;
+    height: 40px;
+    grid-template-columns: 75px 150px 100px 100px ;  
+    grid-template-rows:auto; 
+    justify-content: end;
+    align-items: flex-end;
+    background-color: blue;
+}
+.barraNavegacion__item{
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+}
+.barraNavegacion__item:hover{
+    background-color: rgb(56, 56, 238);
+}
+
+
+
