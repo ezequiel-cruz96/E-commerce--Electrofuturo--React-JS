@@ -1,12 +1,11 @@
 import React from 'react';
 import CartWidget from './CartWidget';
-import ItemListContainer from './ItemListContainer.js';
 import './NavBar.css';
 
 
 function NavBar(props){
     return(
-        <div >
+        <div>
             <div className="barraNavegacion__logo">
             Electro futuro
             </div>
@@ -19,7 +18,6 @@ function NavBar(props){
                     <div><CartWidget/></div>
                 </div>
             </div>
-            <ItemListContainer greeting="Bienvenido a Electro futuro"/>
         </div>
     ) 
 }
