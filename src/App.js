@@ -1,16 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar.js';
 import './components/NavBar.css';
-import './components/logo.png';
 
-function App() {
-  return (
-    <div> 
-<NavBar/> 
-    </div>
-  );
-}
 
-export default App;
+class App extends React.Component{
+
+  render(){
+  
+    return(
+  
+      <div>
+        <NavBar/>
+      </div>
+    )
+  }
+  }
+  
+  export default App;
+  
