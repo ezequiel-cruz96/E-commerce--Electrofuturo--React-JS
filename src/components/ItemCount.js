@@ -8,9 +8,9 @@ export default function ItemCount ({stock,inicial,item}){
     let [count, setCount] = useState(inicial);
     
     function onAdd() {
-        if (count >= stock)
+        if (count > stock)
         return; 
-        setCount(count + 1) 
+        setCount(count + 1);
        }
        
        function offAdd() {
@@ -28,14 +28,28 @@ export default function ItemCount ({stock,inicial,item}){
                 <div>
                     <button onClick= {offAdd} className="restar">-</button>
                 </div>
+
                 <div>
-                    {count}</div>
+                    
+                { 
+                count>stock? (
+                    
+                    <div className="stock"> No hay más stock </div>
+                    
+                )
+                : (<div>{count}</div>) 
+            }
+                </div>
                 <div>
                     <button onClick= {onAdd} className="sumar" >+</button>
                 </div>
             </div>
 
             <div className="item__titulo--añadirCarrito"> Agregar a carrito </div>
+
+             
+
+        <div></div>
 
         </div>
     )
