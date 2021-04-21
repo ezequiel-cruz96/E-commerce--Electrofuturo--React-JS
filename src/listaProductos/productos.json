@@ -1,0 +1,33 @@
+[
+    {
+        "id": "0",
+        "producto": "Resistencia",
+        "categoria": "Resistencia electrica",
+        "cantidad":"100",
+        "precio": "200 $"
+    },
+    {
+        "id": "1",
+        "producto": "Capacititor 100uF",
+        "categoria": "Capacitor Electrolitico",
+        "cantidad":"200",
+        "precio": "900 $"
+    },
+   
+    {
+        "id": "3",
+        "producto": "Led rojo",
+        "categoria": "Led",
+        "cantidad":"300",
+        "precio": "2000 $"
+    },
+   
+    {
+        "id": "4",
+        "producto": "NE555",
+        "categoria": "MIcrocontrolador ",
+        "cantidad":"10",
+        "precio": "480 $"
+    }
+
+]

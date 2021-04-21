@@ -47,8 +47,6 @@ export default function ItemCount ({stock,inicial,item}){
 
             <div className="item__titulo--añadirCarrito"> Agregar a carrito </div>
 
-             
-
         <div></div>
 
         </div>
