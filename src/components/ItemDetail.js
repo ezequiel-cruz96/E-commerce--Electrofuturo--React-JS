@@ -1,12 +1,14 @@
 import React from 'react'
 
 
-export default function ItemDetail ({props}) {
+export default function ItemDetail ({idApi, tituloApi}) {
 
 
     return (
      <div>
-        productos:{props.datitaEntrada} 
+        Id:{idApi} 
+
+        Title:{tituloApi}
   
      </div>
     )

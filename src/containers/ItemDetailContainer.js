@@ -1,22 +1,21 @@
 import React , {useState, useEffect} from 'react'
-import ItemDetail from './components/ItemDetail.js'
+import ItemDetail from '../components/ItemDetail.js'
+import {useParams} from 'react-router-dom';
 
-export default function ItemDetailContainer(){
+export default function ItemDetailContainer() {
 
-    const [datita, setDatita] = useState([]);
+  let {id} = useParams();
+  const [data, setData] = useState({id:"", title:""});
 
-    
-
-    useEffect(()=>{
-        fetch("https://jsonplaceholder.typicode.com/posts")
-        .then((response) => response.json())
-        .then((datos) => setDatita(datos));
-    },[])
-
-
-
-    return(
-        <ItemDetail datitaTitulo={data.title} />
-        
-    )
+  useEffect(() => {
+      obtenerProducto(id)
+          .then(res => setData(res))
+  },[id])
+  
+  return(
+      <div>
+          
+        <ItemDetail idApi={data.id} titleApi={data.title} />  
+      </div>
+  )
 }
