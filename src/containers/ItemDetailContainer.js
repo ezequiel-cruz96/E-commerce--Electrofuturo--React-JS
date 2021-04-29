@@ -1,6 +1,7 @@
 import React , {useState, useEffect} from 'react'
 import ItemDetail from '../components/ItemDetail.js'
 import {useParams} from 'react-router-dom';
+import {obtenerProducto} from "../service/serviciosApi.js";
 
 export default function ItemDetailContainer() {
 
