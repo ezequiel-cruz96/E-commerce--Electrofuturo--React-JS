@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import './NavBar.css';
 
 
-
-export default function ItemCount ({stock,inicial,item}){ 
+export default function ItemCount ({stock,inicial,item,}){ 
 
     let [count, setCount] = useState(inicial);
     
@@ -44,11 +43,15 @@ export default function ItemCount ({stock,inicial,item}){
                     <button onClick= {onAdd} className="sumar" >+</button>
                 </div>
             </div>
+        
 
-            <div className="item__titulo--añadirCarrito"> Agregar a carrito </div>
 
-        <div></div>
 
+
+                       
         </div>
     )
+ 
+      
    }
+ 

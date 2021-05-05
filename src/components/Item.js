@@ -12,7 +12,7 @@ export default function Item({post}) {
             <div>
               <div>Producto: {post.producto}</div>
               <div>Categoría: {post.categoria}</div>
-              <div>Cantidad: {post.cantidad} </div>
+              <div>Descripcion: {post.descripcion} </div>
               <div>Precio: {post.precio}</div>   
             </div>                        
     </div>

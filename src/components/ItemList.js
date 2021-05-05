@@ -8,7 +8,7 @@ export default function List({postsInput}) {
       {
         postsInput.map((post) => { 
           return (
-            <Item key={post.id} post={post} />
+            <Item key={post.id} post={post}  />
           )
         })
       }
