@@ -19,9 +19,7 @@ function ItemListContainer(props){
     return(
         <div>
             <h1>Bienvenido a electro futuro</h1>
-            {console.log(props)}
-            <ItemCount stock={5} inicial={0} item="Hamburguesa simple"/>
-            <ItemCount stock={10} inicial={3} item="Hamburguesa doble" /> 
+            {console.log(props)}             
            
 {/*             <List postsInput={posts}/> 
  */}        </div>  

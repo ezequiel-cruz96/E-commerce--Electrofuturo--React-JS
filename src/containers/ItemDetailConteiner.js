@@ -9,7 +9,7 @@ function ItemDetailContainer(){
 
     useEffect(() => {
         setTimeout(() => {
-            fetch('https://my-json-server.typicode.com/ezequiel-cruz96/Api-Rest--Base-de-datos--Hamburguesas/datos')
+            fetch('https://my-json-server.typicode.com/ezequiel-cruz96/Api-Rest--Base-de-datos--Hamburguesas/Hamburguesas')
                 .then((response) => response.json())
                 .then((data) => setDatos(data));
         },2000);
@@ -20,7 +20,7 @@ function ItemDetailContainer(){
         <div>
             {
                 datos.map((items)=>(
-                    <ItemDetail key={items.id} />
+                    <ItemDetail key={items.id}  />
                 ))
             }
 

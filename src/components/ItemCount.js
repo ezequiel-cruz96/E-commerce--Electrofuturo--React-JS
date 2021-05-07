@@ -1,10 +1,17 @@
 import React, {useState} from 'react';
+import ItemDetail from './ItemDetail';
 import './NavBar.css';
+import { Link} from 'react-router-dom';
 
 
-export default function ItemCount ({stock,inicial,item,}){ 
+
+export default function ItemCount ({stock,inicial,item,Onadd}){ 
+
+
 
     let [count, setCount] = useState(inicial);
+
+    Onadd=count;
     
     function onAdd() {
         if (count > stock)
@@ -17,6 +24,7 @@ export default function ItemCount ({stock,inicial,item,}){
         return; 
         setCount(count - 1) 
        }
+
 
     return(
         <div>
@@ -43,12 +51,21 @@ export default function ItemCount ({stock,inicial,item,}){
                     <button onClick= {onAdd} className="sumar" >+</button>
                 </div>
             </div>
-        
 
-
-
-
-                       
+            <div>
+                    
+                { 
+                (Onadd>0)&&(Onadd<=stock)? (
+                    
+                    (<Link to= '/catalog'>
+                    <button className="item__titulo--añadirCarrito"> Terminar mi compra</button>
+                </Link>) 
+                    
+                )
+                : ("") 
+            }
+                </div>
+    
         </div>
     )
  

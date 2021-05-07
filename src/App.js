@@ -22,7 +22,7 @@ class App extends React.Component{
             <ItemListContainer greeting="Bienvenido a Electro futuro"/>
           </Route>
           <Route path="/datos/:id">
-            <ItemDetail carrito={5} />
+            <ItemDetail  />
           </Route>
         </Switch>
         </BrowserRouter>
